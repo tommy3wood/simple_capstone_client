@@ -1,0 +1,25 @@
+<%= form_tag "/client/products", method: :post do %>
+
+  <div>
+    Name: <input type="text" name="name">
+  </div>
+
+  <div>
+    Price: <input type="text" name="price">
+  </div>
+
+  <div>
+    Description: <input type="text" name="description">
+  </div>
+
+  <div>
+    What it look like: <input type="text" name="image_url">
+  </div>
+
+  <div>
+    <input type="submit" value="SEND ME THE NEW">
+  </div>
+
+  <img src="https://media4.giphy.com/media/l0HlyHKAw80RVGmNG/giphy.gif">
+
+<% end %>
