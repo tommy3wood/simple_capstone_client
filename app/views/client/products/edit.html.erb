@@ -1,0 +1,26 @@
+<%= form_tag "/client/products/#{ @product["id"] }", method: :patch do %>
+
+  <div>
+    Name: <input type="text" name="name" value="<%= @product["name"]%>">
+  </div>
+
+  <div>
+    Price: <input type="text" name="price" value="<%= @product["price"]%>">
+  </div>
+
+  <div>
+    Description: <input type="text" name="description" value="<%= @product["description"]%>">
+  </div>
+
+  <div>
+    What it look like: <input type="text" name="image_url" value="<%= @product["image_url"]%>">
+  </div>
+
+  <div>
+    <input type="submit" value="Oh the products they are a changin">
+  </div>
+  <br>
+  <br>
+  <img src="https://media2.giphy.com/media/guSDEekNFb23C/giphy.gif">
+
+<% end %>
